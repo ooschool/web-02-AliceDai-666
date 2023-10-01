@@ -312,8 +312,15 @@ label {
   left: 0;
   top: 0;
   padding: 8px 0;
+  position: fixed;
+  z-index: 400;
+  display: flex;
+  align-items: center;
   transition: all 0.2s;
+}
+.navbar .logo {
   display: block;
+  width: 170px;
   height: 40px;
   background-image: url("../images/KOLABLE_white02.svg");
   background-size: contain;
