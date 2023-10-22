@@ -549,15 +549,196 @@ $ColItem: 12;
 
 .create-value {
     background-color: $light-gray;
+    overflow: hidden;
+    .background-image {
+        background-image: url(../images/resize_unsplash1_2.jpg);
+        display: block;
+        width: 55%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(44, 44, 44, 0.2));
+        }
+    }
+    .intro-content {
+        padding: 40px;
+        background-color: $white;
+        margin-left: 40%;
+        margin-right: 60px;
+        border-radius: 10px;
+        .section-title {
+            margin-bottom: 32px;
+            .top-title, .large-title, .subtitle {
+                text-align: left;
+            }
+        }
+        .info-items {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: -55px;
+            margin-right: -55px;
+            .info-item {
+                width: 50%;
+                padding: 0 55px;
+                .icon {
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                .title {
+                    font-size: 24px;
+                    line-height: 48px;
+                    font-weight: 700;
+                    letter-spacing: 0.72px;
+                    color: black;
+                    margin-bottom: 10px;
+                }
+                .para {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    text-align: justify;
+                    color: #333333;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+        .btn {
+            width: 270px;
+            display: inline-block;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border: 1px solid $primery-color;
+            &:hover {
+                background-color: #ee7061;
+            }
+        }
+    }
 }
 
 // End create-value---------------------
+
+// Start Number---------------------
+.number {
+    background-color: #334164;
+    .title-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & h2 {
+            color: white;
+            font-size: 56px;
+            line-height: 84px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    .subtitle {
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+// End Number---------------------
 
 // Start footer---------------------
 
 .footer {
     background-color: $footer-bgc;
     color: $white;
+    padding-top: 60px;
+    .info-section {
+        margin-bottom: 50px;
+        .kolable-logo {
+            display: block;
+            width: 250px;
+            height: 53px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 16px;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .slogan {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+        .info-group {
+            margin-bottom: 16px;
+        }
+        .line-link {
+            display: flex;
+            align-items: center;
+            .icon {
+                display: inline-block;
+                vertical-align: top;
+                width: 32px;
+                height: 32px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: 10px;
+            }
+        }
+        .info, .link-txt {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #a8bbcc;
+        }
+    }
+    .nav-map {
+        display: flex;
+        flex-wrap: wrap;
+        .nav-items {
+            margin-bottom: 84px;
+            width: 33.33%;
+            display: flex;
+            justify-content: end;
+            .link-group {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-link {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 700;
+                color: white;
+                padding: 10px 0;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+
+.copyright {
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
 }
 
 // End footer---------------------
