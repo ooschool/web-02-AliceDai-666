@@ -650,9 +650,188 @@ label {
 
 .create-value {
   background-color: #f8fafc;
+  overflow: hidden;
+}
+.create-value .background-image {
+  background-image: url(../images/resize_unsplash1_2.jpg);
+  display: block;
+  width: 55%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.create-value .background-image:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(44, 44, 44, 0.2));
+}
+.create-value .intro-content {
+  padding: 40px;
+  background-color: #FFFFFF;
+  margin-left: 40%;
+  margin-right: 60px;
+  border-radius: 10px;
+}
+.create-value .intro-content .section-title {
+  margin-bottom: 32px;
+}
+.create-value .intro-content .section-title .top-title, .create-value .intro-content .section-title .large-title, .create-value .intro-content .section-title .subtitle {
+  text-align: left;
+}
+.create-value .intro-content .info-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -55px;
+  margin-right: -55px;
+}
+.create-value .intro-content .info-items .info-item {
+  width: 50%;
+  padding: 0 55px;
+}
+.create-value .intro-content .info-items .info-item .icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.create-value .intro-content .info-items .info-item .title {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  color: black;
+  margin-bottom: 10px;
+}
+.create-value .intro-content .info-items .info-item .para {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  color: #333333;
+  margin-bottom: 32px;
+}
+.create-value .intro-content .btn {
+  width: 270px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #e35540;
+}
+.create-value .intro-content .btn:hover {
+  background-color: #ee7061;
+}
+
+.number {
+  background-color: #334164;
+}
+.number .title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number .title-section h2 {
+  color: white;
+  font-size: 56px;
+  line-height: 84px;
+  font-weight: 700;
+  text-align: center;
+}
+.number .subtitle {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .footer {
   background-color: #192633;
   color: #FFFFFF;
+  padding-top: 60px;
+}
+.footer .info-section {
+  margin-bottom: 50px;
+}
+.footer .info-section .kolable-logo {
+  display: block;
+  width: 250px;
+  height: 53px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.footer .info-section .slogan {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+.footer .info-section .info-group {
+  margin-bottom: 16px;
+}
+.footer .info-section .line-link {
+  display: flex;
+  align-items: center;
+}
+.footer .info-section .line-link .icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+.footer .info-section .info, .footer .info-section .link-txt {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #a8bbcc;
+}
+.footer .nav-map {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .nav-map .nav-items {
+  margin-bottom: 84px;
+  width: 33.33%;
+  display: flex;
+  justify-content: end;
+}
+.footer .nav-map .nav-items .link-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer .nav-map .nav-items .main-link {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 4px;
+}
+
+.copyright {
+  padding-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
